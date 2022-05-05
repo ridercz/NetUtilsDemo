@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32228.430
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Altairis.NetUtils.MyPing", "Altairis.NetUtils.MyPing\Altairis.NetUtils.MyPing.csproj", "{DB720D99-844D-4DD9-BD2C-26D7A44C8D14}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Altairis.NetUtils.MyTraceRoute", "Altairis.NetUtils.MyTraceRoute\Altairis.NetUtils.MyTraceRoute.csproj", "{444BF6B1-7F1C-48B2-A48D-844E16B81FC1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PoC", "PoC", "{C73D3EED-27DB-43EB-8E57-E533717E5DB3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Altairis.NetUtils.TraceServer", "Altairis.NetUtils.TraceServer\Altairis.NetUtils.TraceServer.csproj", "{094C5C6A-2943-4FA0-9AB7-5F5781207B36}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Altairis.NetUtils.Backend", "Altairis.NetUtils.Backend\Altairis.NetUtils.Backend.csproj", "{0537E98B-2084-43F2-A85F-A780294F3AF5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Altairis.NetUtils.WorkerService", "Altairis.NetUtils.WorkerService\Altairis.NetUtils.WorkerService.csproj", "{9FB98944-BE36-4BB0-ACFE-75C873190AE0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{58C484E6-6268-42D4-9843-0BC6FBC4A940}"
+	ProjectSection(SolutionItems) = preProject
+		CODE_OF_CONDUCT.md = CODE_OF_CONDUCT.md
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DB720D99-844D-4DD9-BD2C-26D7A44C8D14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB720D99-844D-4DD9-BD2C-26D7A44C8D14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB720D99-844D-4DD9-BD2C-26D7A44C8D14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB720D99-844D-4DD9-BD2C-26D7A44C8D14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{444BF6B1-7F1C-48B2-A48D-844E16B81FC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{444BF6B1-7F1C-48B2-A48D-844E16B81FC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{444BF6B1-7F1C-48B2-A48D-844E16B81FC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{444BF6B1-7F1C-48B2-A48D-844E16B81FC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{094C5C6A-2943-4FA0-9AB7-5F5781207B36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{094C5C6A-2943-4FA0-9AB7-5F5781207B36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{094C5C6A-2943-4FA0-9AB7-5F5781207B36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{094C5C6A-2943-4FA0-9AB7-5F5781207B36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0537E98B-2084-43F2-A85F-A780294F3AF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0537E98B-2084-43F2-A85F-A780294F3AF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0537E98B-2084-43F2-A85F-A780294F3AF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0537E98B-2084-43F2-A85F-A780294F3AF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9FB98944-BE36-4BB0-ACFE-75C873190AE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FB98944-BE36-4BB0-ACFE-75C873190AE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FB98944-BE36-4BB0-ACFE-75C873190AE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FB98944-BE36-4BB0-ACFE-75C873190AE0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DB720D99-844D-4DD9-BD2C-26D7A44C8D14} = {C73D3EED-27DB-43EB-8E57-E533717E5DB3}
+		{444BF6B1-7F1C-48B2-A48D-844E16B81FC1} = {C73D3EED-27DB-43EB-8E57-E533717E5DB3}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0BBB19B0-4E65-4447-B919-9A95C652F40C}
+	EndGlobalSection
+EndGlobal

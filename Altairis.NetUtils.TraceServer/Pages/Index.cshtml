@@ -1,0 +1,12 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<form method="post">
+    <p class="c">
+        <input asp-for="Host" placeholder="www.example.com" class="c" />
+        <input type="submit" value="Trace route"/>
+    </p>
+</form>

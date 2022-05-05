@@ -1,0 +1,86 @@
+﻿html {
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  background: #06c;
+  background: linear-gradient(90deg, #06c 0%, #003366 30%, #003366 70%, #06c 100%);
+  margin: 0;
+  padding: 0;
+}
+html body {
+  background-color: #fff;
+  color: #000;
+  margin: 20px auto;
+  max-width: 900px;
+}
+html body > header {
+  color: #fff;
+  background-color: #404040;
+  padding: 20px;
+  text-align: center;
+}
+html body > header h1 {
+  margin: 0;
+  padding: 0;
+  font-weight: 100;
+  font-size: 200%;
+}
+html body > header a {
+  display: block;
+}
+html body > header a:link, html body > header a:visited, html body > header a:hover, html body > header a:active {
+  text-decoration: none;
+  color: #fff;
+}
+html body > main {
+  padding: 20px;
+}
+html body > footer {
+  text-align: center;
+  font-size: 80%;
+  color: #000;
+  background-color: #bfbfbf;
+  padding: 10px 20px;
+}
+
+a:link, a:visited {
+  color: #06c;
+}
+a:hover, a:active {
+  color: #000;
+}
+
+.l {
+  text-align: left;
+}
+
+.r {
+  text-align: right;
+}
+
+.c {
+  text-align: center;
+}
+
+form input {
+  font-size: 160%;
+  padding: 10px;
+}
+
+table.grid {
+  width: 100%;
+  border-collapse: collapse;
+}
+table.grid td, table.grid th {
+  border: 1px solid rgba(0, 102, 204, 0.5);
+  padding: 5px;
+  text-align: left;
+}
+table.grid thead {
+  background-color: #06c;
+  color: #fff;
+}
+table.grid tbody tr:nth-child(2n) {
+  background-color: rgba(0, 102, 204, 0.1);
+}
+table.grid tbody tr:hover {
+  background-color: rgba(0, 102, 204, 0.25);
+}

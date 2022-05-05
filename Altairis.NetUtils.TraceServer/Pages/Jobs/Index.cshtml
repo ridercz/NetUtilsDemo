@@ -1,0 +1,28 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Jobs";
+}
+<h1>Jobs</h1>
+<table class="grid">
+    <thead>
+        <tr>
+            <th>Host</th>
+            <th>Created</th>
+            <th>Started</th>
+            <th>Completed</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in this.Model.Jobs) {
+            <tr>
+                <th><a asp-page="Detail" asp-route-id="@item.Id">@item.Host</a></th>
+                <td>@item.DateCreated</td>
+                <td>@item.DateStarted</td>
+                <td>@item.DateCompleted</td>
+                <td>@item.Status</td>
+            </tr>
+        }
+    </tbody>
+</table>

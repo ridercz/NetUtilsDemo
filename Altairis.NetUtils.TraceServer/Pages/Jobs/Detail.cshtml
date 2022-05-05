@@ -1,0 +1,19 @@
+﻿@page "/Jobs/{id:guid}"
+@model DetailModel
+@{
+    this.ViewData["Title"] = this.Model.Job.Host;
+    <h1>@this.ViewData["Title"]</h1>
+
+    if (this.Model.Job.Status == TraceJobStatus.Waiting) {
+        <p>Queued, please wait...</p>
+        <p><a asp-page="Index">Job list</a></p>
+    } else if (this.Model.Job.Status == TraceJobStatus.Processing) {
+        <p>Processing, please wait...</p>
+        <p><a asp-page="Index">Job list</a></p>
+    } else if (this.Model.Job.Status == TraceJobStatus.Completed) {
+        <pre>@this.Model.Job.Result</pre>
+    } else {
+        // Error
+        <p>Error: @this.Model.Job.Result</p>
+    }
+}

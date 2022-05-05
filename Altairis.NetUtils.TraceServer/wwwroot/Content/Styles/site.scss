@@ -1,0 +1,108 @@
+﻿$BackgroundColor: #fff;
+$ForegroundColor: #000;
+$AccentColor: #06c;
+$Padding: 20px;
+
+html {
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+    background: $AccentColor;
+    background: linear-gradient(90deg, $AccentColor 0%, darken($AccentColor, 20) 30%, darken($AccentColor, 20) 70%, $AccentColor 100%);
+    margin: 0;
+    padding: 0;
+
+    body {
+        background-color: $BackgroundColor;
+        color: $ForegroundColor;
+        margin: $Padding auto;
+        max-width: 900px;
+
+        > header {
+            color: $BackgroundColor;
+            background-color: lighten($ForegroundColor, 25);
+            padding: $Padding;
+            text-align: center;
+
+            h1 {
+                margin: 0;
+                padding: 0;
+                font-weight: 100;
+                font-size: 200%;
+            }
+
+            a {
+                display: block;
+                &:link, &:visited, &:hover, &:active {
+                    text-decoration: none;
+                    color: $BackgroundColor;
+                }
+            }
+        }
+
+        > main {
+            padding: $Padding;
+        }
+
+        > footer {
+            text-align: center;
+            font-size: 80%;
+            color: $ForegroundColor;
+            background-color: darken($BackgroundColor, 25);
+            padding: ($Padding / 2) $Padding;
+        }
+    }
+}
+
+a {
+    &:link, &:visited {
+        color: $AccentColor;
+    }
+
+    &:hover, &:active {
+        color: $ForegroundColor;
+    }
+}
+
+.l {
+    text-align: left;
+}
+
+.r {
+    text-align: right;
+}
+
+.c {
+    text-align: center;
+}
+
+form {
+    input {
+        font-size: 160%;
+        padding: $Padding / 2;
+    }
+}
+
+table.grid {
+    width: 100%;
+    border-collapse: collapse;
+
+    td, th {
+        border: 1px solid rgba($AccentColor, .5);
+        padding: $Padding / 4;
+        text-align: left;
+    }
+
+    thead {
+        background-color: $AccentColor;
+        color: $BackgroundColor;
+    }
+
+    tbody {
+        tr:nth-child(2n) {
+            background-color: rgba($AccentColor, .1);
+        }
+
+        tr:hover {
+            background-color: rgba($AccentColor, .25);
+        }
+    }
+}
