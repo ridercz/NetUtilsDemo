@@ -44,7 +44,7 @@ namespace Altairis.NetUtils.Backend {
                 this.logger.LogInformation("Starting job {id} for host {host}.", job.Id, job.Host);
                 job.Status = TraceJobStatus.Processing;
                 job.DateStarted = DateTime.Now;
-                await dc.SaveChangesAsync();
+                await dc.SaveChangesAsync(stoppingToken);
 
                 // Process job
                 try {
@@ -57,7 +57,7 @@ namespace Altairis.NetUtils.Backend {
                     this.logger.LogWarning(ex, "Error while processing job {id}.", job.Id);
                 }
                 job.DateCompleted = DateTime.Now;
-                await dc.SaveChangesAsync();
+                await dc.SaveChangesAsync(stoppingToken);
             }
         }
 
