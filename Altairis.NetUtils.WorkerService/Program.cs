@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore;
 var hostBuilder = Host.CreateDefaultBuilder(args);
 hostBuilder.ConfigureServices(services => {
     services.AddDbContext<NetUtilsDbContext>(options => {
-        options.UseSqlServer("SERVER=.\\SqlExpress;TRUSTED_CONNECTION=yes;DATABASE=TraceServer");
+        options.UseSqlServer("SERVER=.\\SqlExpress;TRUSTED_CONNECTION=yes;DATABASE=TraceServer;TRUSTSERVERCERTIFICATE=true");
     });
     services.AddHostedService<QueueProcessor>();
 });
