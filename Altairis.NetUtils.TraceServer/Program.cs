@@ -5,7 +5,7 @@ builder.Services.AddDbContext<NetUtilsDbContext>(options => {
     options.UseSqlServer("SERVER=.\\SqlExpress;TRUSTED_CONNECTION=yes;DATABASE=TraceServer");
 });
 builder.Services.AddRazorPages();
-//builder.Services.AddHostedService<QueueProcessor>();
+builder.Services.AddHostedService<QueueProcessor>();
 var app = builder.Build();
 
 // Create or migrate database
