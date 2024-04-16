@@ -1,14 +1,13 @@
-using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace Altairis.NetUtils.TraceServer.Pages.Jobs {
-    public class IndexModel : PageModel {
-        private readonly NetUtilsDbContext dc;
 
-        public IndexModel(NetUtilsDbContext dc) {
-            this.dc = dc ?? throw new ArgumentNullException(nameof(dc));
-        }
+namespace Altairis.NetUtils.TraceServer.Pages.Jobs;
 
-        public IEnumerable<TraceJob> Jobs => this.dc.TraceJobs.OrderByDescending(x => x.DateCreated).ToList();
+public class IndexModel(NetUtilsDbContext dc) : PageModel {
 
+    public IEnumerable<TraceJob> Jobs = [];
+
+    public async Task OnGetAsync() {
+        this.Jobs = await dc.TraceJobs.OrderByDescending(x => x.DateCreated).ToListAsync();
     }
+
 }

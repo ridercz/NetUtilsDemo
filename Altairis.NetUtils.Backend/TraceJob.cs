@@ -1,32 +1,31 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Altairis.NetUtils.Backend {
-    public class TraceJob {
-        [Key]
-        public Guid Id { get; set; }
+namespace Altairis.NetUtils.Backend; 
 
-        [Required]
-        public TraceJobStatus Status { get; set; }
+public class TraceJob {
+    [Key]
+    public Guid Id { get; set; }
 
-        [Required]
-        public DateTime DateCreated { get; set; }
+    [Required]
+    public TraceJobStatus Status { get; set; }
 
-        public DateTime? DateStarted { get; set; }
+    [Required]
+    public DateTime DateCreated { get; set; }
 
-        public DateTime? DateCompleted { get; set; }
+    public DateTime? DateStarted { get; set; }
 
-        [Required]
-        public string Host { get; set; } = string.Empty;
+    public DateTime? DateCompleted { get; set; }
 
-        public string? Result { get; set; }
+    [Required]
+    public string Host { get; set; } = string.Empty;
 
-    }
+    public string? Result { get; set; }
 
-    public enum TraceJobStatus {
-        Waiting = 0,
-        Processing = 1,
-        Completed = 2,
-        Error = 3,
-    }
+}
 
+public enum TraceJobStatus {
+    Waiting = 0,
+    Processing = 1,
+    Completed = 2,
+    Error = 3,
 }

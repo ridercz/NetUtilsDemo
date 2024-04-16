@@ -1,9 +1,6 @@
-﻿namespace Altairis.NetUtils.Backend {
-    public class NetUtilsDbContext : DbContext {
+﻿namespace Altairis.NetUtils.Backend; 
+public class NetUtilsDbContext(DbContextOptions<NetUtilsDbContext> options) : DbContext(options) {
 
-        public NetUtilsDbContext(DbContextOptions<NetUtilsDbContext> options) : base(options) { }
+    public DbSet<TraceJob> TraceJobs => this.Set<TraceJob>();
 
-        public DbSet<TraceJob> TraceJobs => this.Set<TraceJob>();
-
-    }
 }

@@ -1,14 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc.RazorPages;
-
-namespace Altairis.NetUtils.TraceServer.Pages {
-    public class PrivacyModel : PageModel {
-        private readonly ILogger<PrivacyModel> _logger;
-
-        public PrivacyModel(ILogger<PrivacyModel> logger) {
-            _logger = logger;
-        }
-
-        public void OnGet() {
-        }
+﻿namespace Altairis.NetUtils.TraceServer.Pages;
+public class PrivacyModel(ILogger<PrivacyModel> logger) : PageModel {
+    public void OnGet() {
     }
 }

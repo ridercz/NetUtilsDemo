@@ -23,7 +23,7 @@ var buffer = new byte[BUFFER_LENGTH];
 Random.Shared.NextBytes(buffer);
 
 // Send pings
-for (int i = 0; i < COUNT; i++) {
+for (var i = 0; i < COUNT; i++) {
     var reply = ping.Send(args[0], TIMEOUT, buffer, options);
     if (reply.Status == IPStatus.TimedOut) {
         Console.WriteLine($"{i + 1,2}: {reply.Status}");
